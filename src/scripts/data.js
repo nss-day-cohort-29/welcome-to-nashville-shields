@@ -1,4 +1,21 @@
- nh-api-code-setup
+
+// This is JD's code for pulling data on Parks.
+
+let parkDataContainer = {};
+
+//const parkData = {
+   // getResources() {
+      fetch("https://data.nashville.gov/resource/xbru-cfzi.json?$$app_token=lfAtpDX8XuYvee5T9U6FnVpFP",
+      {Authorization: {Bearer: "lfAtpDX8XuYvee5T9U6FnVpFP"}})
+      .then(parkDataContainer => parkDataContainer.json())
+      .then(parkDataContainer => {
+         console.log(parkDataContainer);
+      });
+      //}
+   
+  // }
+
+  console.log(parkDataContainer);
 // Zomato API - Nick
 
 let foodData = {};
@@ -16,26 +33,14 @@ fetch("https://data.nashville.gov/resource/xbru-cfzi.json?$$app_token=lfAtpDX8Xu
     {Authorization: {Bearer: "lfAtpDX8XuYvee5T9U6FnVpFP"}})
     .then(parkData => parkData.json())
     .then(parkData => {
-        console.log(parkData)})
+        console.log(parkData);
+      });
 
 let MeetUpDataNashvile = {};
 fetch("https://www.eventbriteapi.com/v3/events/search/?token=MSVL4Q3GQBOU2GKYHRP2#",
     {Authorization: {Bearer: "MSVL4Q3GQBOU2GKYHRP2#"}})
     .then(MeetUpNashvile => MeetUpNashvile.json())
     .then(MeetUpNashvile => {
-        console.table(MeetUpNashvile)})
-const parkData = {
-    getResources() {
-      return fetch("https://data.nashville.gov/resource/xbru-cfzi.json")
-      .then(function(response){
-        response.json()
-    })
-    .then(response => console.log(response));
-    },
-    queryResources(userInput) {
-      return fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?q=${userInput}`)
-      .then(response => response.json());
-    }
-  };
+        console.table(MeetUpNashvile);
+      });
 
-  parkData.getResources();

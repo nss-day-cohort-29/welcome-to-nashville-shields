@@ -1,0 +1,76 @@
+.bodyofDoc{
+
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.mainHeader{
+
+   display: flex;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.questionHeader{
+
+    display:flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.searchButtons {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(83, 80, 80);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 75px;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .searchButtons {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .searchButtons:after {
+    content: '◊◊';
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    right: 50px;
+    transition: 1s;
+  }
+  
+  .searchButtons:hover  {
+    padding-right: 20px;
+  }
+  
+  .searchButtons:hover:after {
+    opacity: 5;
+    right: 2px;
+    
+  }
+
+  .results__Container{
+
+    border: 2px solid rgb(5, 5, 5);
+    padding: 25px 50px 75px 100px;
+
+  }
+
+  .itinerary__Container{
+
+    border: 2px solid rgb(5, 5, 5);
+    padding: 25px 50px 75px 100px;
+
+  }
