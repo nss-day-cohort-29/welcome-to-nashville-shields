@@ -2,7 +2,6 @@
 // This is JD's code for pulling data on Parks.
 
 let parkDataContainer = {};
-
 //const parkData = {
    // getResources() {
       fetch("https://data.nashville.gov/resource/xbru-cfzi.json?$$app_token=lfAtpDX8XuYvee5T9U6FnVpFP",
@@ -14,7 +13,6 @@ let parkDataContainer = {};
       //}
    
   // }
-
   console.log(parkDataContainer);
 // Zomato API - Nick
 
@@ -28,13 +26,6 @@ fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=
         console.table(foodData);
     });
     
-let parkData = {};
-fetch("https://data.nashville.gov/resource/xbru-cfzi.json?$$app_token=lfAtpDX8XuYvee5T9U6FnVpFP",
-    {Authorization: {Bearer: "lfAtpDX8XuYvee5T9U6FnVpFP"}})
-    .then(parkData => parkData.json())
-    .then(parkData => {
-        console.log(parkData);
-      });
 
 let MeetUpDataNashvile = {};
 fetch("https://www.eventbriteapi.com/v3/events/search/?token=MSVL4Q3GQBOU2GKYHRP2#",
