@@ -2,6 +2,8 @@
 let ParkChoiceCreate = document.createElement("Section");
 let ParkChoiceCreateButton = document.createElement("Button");
 let ParkChoiceClassGet = document.querySelector(".results__Container");
+ParkChoiceCreateButton.classList.add("park_search_button");
+ParkChoiceCreate.classList.add("park_search_input");
 document.getElementsByClassName("ParkResultTempButton");
 ParkChoiceCreateButton.innerHTML = "Save";
 ParkChoiceCreate.textContent += " place Holder";
