@@ -4,9 +4,17 @@
 document.querySelector("#search--button_parks").addEventListener("click", function(event){
     let parkUserInput = document.querySelector("#search--userInput__parks");
      let parkSearchUserInput = parkUserInput.value;
-     let parkClass = document.querySelector(".park_search_input");
+     let parkClass =  document.querySelector(".park_search_input");
      parkClass.textContent = parkSearchUserInput;
  });
+ 
+ document.querySelector(".park_search_button").addEventListener("click", function(event){
+let ParkSaveButtonResults = document.querySelector(".itinerary__Container");
+let  FianlParkItenireary = document.querySelector("#search--userInput__parks");
+ParkSaveButtonResults.textContent = FianlParkItenireary.value
+console.log(ParkSaveButtonResults)
+});
+
 //  added eventListener that listens whenever we write something in the food search field 
 //  and shows the result.
  document.querySelector("#search--button_food").addEventListener("click", function(event){
@@ -16,6 +24,7 @@ document.querySelector("#search--button_parks").addEventListener("click", functi
      foodClass.textContent = foodSearchUserInput;
      console.log(foodSearchUserInput);
  });
+
 //  added eventListener that listens whenever we write something in the meet-ups search field 
 //  and shows the result.
 
