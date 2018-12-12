@@ -9,3 +9,45 @@
 
 
 
+let meetupName = [];
+
+searchData.queryResourcesMeetup()
+.then(fetchedMeetupData => {
+    meetupDataNashville = fetchedMeetupData.top_match_events;
+    // console.log (meetupDataNashville);
+
+    meetupDataNashville.forEach( meetupIndex => {
+
+        // console.log(meetupIndex);
+        meetupName = meetupIndex.name.text;
+    
+        
+    });
+
+    
+});
+
+console.log(meetupName);
+
+searchData.queryResourcesPark()
+.then(userQuery => {
+   let parkTest = userQuery;
+   parkTest.forEach(allParks => {
+       let parkSearchReturn = allParks.park_name + " " + allParks.mapped_location_address;
+       console.log(parkSearchReturn);
+       return (parkSearchReturn);
+
+   });
+});
+
+
+// searchData.queryResourcesConcert()
+// .then(fetchedConcertData => {
+//     console.log(fetchedConcertData);
+
+
+
+// });
+    
+    
+    
