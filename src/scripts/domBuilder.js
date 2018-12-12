@@ -43,7 +43,7 @@ let ConcertsChoiceCreate = document.createElement("Section");
 let ConcertsChoiceCreateButton = document.createElement("Button");
 let ConcertsChoiceClassGet = document.querySelector(".results__Container");
 let ConcertsChoiceClassAdd = ConcertsChoiceCreate.classList.add("ConcertsResultTemp");
-let ConcertsChoiceCreateButtoncreateclass = ConcertsChoiceCreateButton.classList.add("ConcertsResultTempButton")
+let ConcertsChoiceCreateButtoncreateclass = ConcertsChoiceCreateButton.classList.add("ConcertsResultTempButton");
 ConcertsChoiceCreate.textContent += " ";
 ConcertsChoiceCreateButton.innerHTML = "Save";
 ConcertsChoiceClassGet.appendChild(ConcertsChoiceCreateButton);
@@ -57,7 +57,7 @@ console.log(ConcertsChoiceCreate);
 let ParkChoiceCreateSaved = document.createElement("Section");
 let ParkChoiceClassSavedAdd = ParkChoiceCreateSaved.classList.add("ParkResultSaved");
 let ParkChoiceClassSavedGet = document.querySelector(".itinerary__Container");
-ParkChoiceClassSavedGet.appendChild(ParkChoiceCreateSaved)
+ParkChoiceClassSavedGet.appendChild(ParkChoiceCreateSaved);
 console.log(ParkChoiceCreateSaved);
 
 
@@ -67,7 +67,7 @@ console.log(ParkChoiceCreateSaved);
 let FoodChoiceCreateSaved = document.createElement("Section");
 let FoodChoiceClassSavedAdd = FoodChoiceCreateSaved.classList.add("FoodResultSaved");
 let FoodChoiceClassSavedGet = document.querySelector(".itinerary__Container");
-FoodChoiceClassSavedGet.appendChild(FoodChoiceCreateSaved)
+FoodChoiceClassSavedGet.appendChild(FoodChoiceCreateSaved);
 console.log(FoodChoiceCreateSaved);
 
 
@@ -76,7 +76,7 @@ console.log(FoodChoiceCreateSaved);
 let MeetupChoiceCreateSaved = document.createElement("Section");
 let MeetupChoiceClassSavedAdd = MeetupChoiceCreateSaved.classList.add("MeetupResultSaved");
 let MeetupChoiceClassSavedGet = document.querySelector(".itinerary__Container");
-MeetupChoiceClassSavedGet.appendChild(MeetupChoiceCreateSaved)
+MeetupChoiceClassSavedGet.appendChild(MeetupChoiceCreateSaved);
 console.log(MeetupChoiceCreateSaved);
 
 
@@ -85,5 +85,5 @@ console.log(MeetupChoiceCreateSaved);
 let ConcertsChoiceCreateSaved = document.createElement("Section");
 let ConcertsChoiceClassSavedAdd = ConcertsChoiceCreateSaved.classList.add("ConcertsResultSaved");
 let ConcertshoiceClassSavedGet = document.querySelector(".itinerary__Container");
-ConcertshoiceClassSavedGet.appendChild(ConcertsChoiceCreateSaved)
+ConcertshoiceClassSavedGet.appendChild(ConcertsChoiceCreateSaved);
 console.log(ConcertsChoiceCreateSaved);
