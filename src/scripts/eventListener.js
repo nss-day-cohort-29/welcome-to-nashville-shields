@@ -11,8 +11,8 @@ document.querySelector("#search--button_parks").addEventListener("click", functi
  document.querySelector(".park_search_button").addEventListener("click", function(event){
 let ParkSaveButtonResults = document.querySelector(".itinerary__Container");
 let  FianlParkItenireary = document.querySelector("#search--userInput__parks");
-ParkSaveButtonResults.textContent = FianlParkItenireary.value
-console.log(ParkSaveButtonResults)
+ParkSaveButtonResults.textContent = FianlParkItenireary.value;
+console.log(ParkSaveButtonResults);
 });
 
 //  added eventListener that listens whenever we write something in the food search field 
